@@ -566,10 +566,26 @@ footer {
     height: 2px;
   }
 
-  .social-links,
+  /* .social-links,
   .email-link {
     display: none;
+  } */
+  .social-links {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 40px;
   }
+
+  .social-links::after {
+    display: none;
+  }
+
+  .email-link {
+    display: none; /* email vertical link still useless on mobile */
+  }
+
 
   .contact h2 {
     font-size: 36px;
