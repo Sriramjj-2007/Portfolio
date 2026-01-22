@@ -1,277 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sriram | Portfolio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
 
-    <link rel="stylesheet" href="./src/style.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="container">
-        <a href="#" class="logo">&lt;SR /&gt;</a>
-        <nav id="nav">
-          <a href="#about"><span>01.</span> About</a>
-          <a href="#experience"><span>02.</span> Focus Areas</a>
-          <a href="#projects"><span>03.</span> Projects</a>
-          <a href="#contact"><span>04.</span> Contact</a>
-        </nav>
-        <button class="menu-btn" id="menuBtn">☰</button>
-      </div>
-      <div class="mobile-nav" id="mobileNav">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sriram | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="#" class="logo">&lt;SR /&gt;</a>
+      <nav id="nav">
         <a href="#about"><span>01.</span> About</a>
-        <a href="#experience"><span>02.</span> Focus Areas</a>
+        <a href="#experience"><span>02.</span> Exploring</a>
         <a href="#projects"><span>03.</span> Projects</a>
         <a href="#contact"><span>04.</span> Contact</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#about"><span>01.</span> About</a>
+      <a href="#experience"><span>02.</span> Exploring</a>
+      <a href="#projects"><span>03.</span> Projects</a>
+      <a href="#contact"><span>04.</span> Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-greeting">Hi, my name is</p>
+
+        <h1>Sriram.</h1>
+        <h2>I build intelligent systems, games, and simulations.</h2>
+
+        <p>
+          I'm a Robotics & Automation Engineering student focused on AI-driven systems, real-time simulations,
+          multiplayer games, and autonomous robotics.
+        </p>
+
+        <a href="#projects" class="btn">Check out my work!</a>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <p class="hero-greeting">Hi, my name is</p>
-
-          <h1>Sriram.</h1>
-          <h2>I build intelligent systems, games, and simulations.</h2>
-
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-heading">
+        <span>01.</span>
+        <h2>Hello World</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
           <p>
-            I'm a Robotics & Automation Engineering student focused on AI-driven
-            systems, real-time simulations, multiplayer games, and autonomous
-            robotics.
+            I'm Sriram — a Robotics & Automation Engineering student with a strong focus on AI systems, game engines,
+            simulations, and real-time applications.
           </p>
 
-          <a href="#projects" class="btn">Check out my work!</a>
+          <p>
+            I work across multiple domains: web-based 3D systems, multiplayer networking, autonomous robotics, and
+            AI-driven behavior models. I care about performance, architecture, and systems that scale.
+          </p>
+
+          <p>
+            Right now, I'm building projects that combine AI, physics, networking, and real-time interaction.
+          </p>
+
+          <ul class="skills-list">
+            <li>JavaScript</li>
+            <li>Three.js / WebGL</li>
+            <li>Unity (C#)</li>
+            <li>Multiplayer Networking (Mirror, KCP)</li>
+            <!-- <li>AI Pathfinding & Behavior Systems</li>
+              <li>Python (AI / Automation)</li> -->
+          </ul>
+        </div>
+        <div class="about-image">
+          <img src="./public/Sriram.JPG" alt="Sriram" />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <div class="section-heading">
-          <span>01.</span>
-          <h2>About Me</h2>
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-heading">
+        <span>02.</span>
+        <h2>Currently Exploring</h2>
+      </div>
+      <div class="experience-container">
+        <div class="experience-tabs" id="experienceTabs">
+          <button class="tab-btn active" data-tab="0">
+            Multiplayer Systems
+          </button>
+          <button class="tab-btn" data-tab="1">AI & Simulation</button>
+          <button class="tab-btn" data-tab="2">
+            Infrastructure & Backend
+          </button>
         </div>
-        <div class="about-content">
-          <div class="about-text">
-            <p>
-              Hi, I'm Sriram — a Robotics & Automation Engineering student with
-              a strong focus on AI systems, game engines, simulations, and
-              real-time applications.
-            </p>
 
-            <p>
-              I work across multiple domains: web-based 3D systems, multiplayer
-              networking, autonomous robotics, and AI-driven behavior models. I
-              care about performance, architecture, and systems that scale.
-            </p>
-
-            <p>
-              Right now, I'm building projects that combine AI, physics,
-              networking, and real-time interaction.
-            </p>
-
-            <ul class="skills-list">
-              <li>JavaScript</li>
-              <li>Three.js / WebGL</li>
-              <li>Unity (C#)</li>
-              <li>Multiplayer Networking (Mirror, KCP)</li>
-              <!-- <li>AI Pathfinding & Behavior Systems</li>
-              <li>Python (AI / Automation)</li> -->
+        <div class="experience-content" id="experienceContent">
+          <div class="experience-panel active" data-panel="0">
+            <h3>Multiplayer & Real-Time Systems</h3>
+            <p class="date">Core Focus</p>
+            <ul>
+              <li>
+                Designed real-time multiplayer game architectures using
+                authoritative servers
+              </li>
+              <li>
+                Implemented client-server sync, prediction, and state
+                reconciliation
+              </li>
+              <li>
+                Worked with Mirror networking and KCP transport for
+                low-latency communication
+              </li>
+              <li>
+                Handled gameplay systems under unreliable network conditions
+              </li>
             </ul>
           </div>
-          <div class="about-image">
-            <img src="./public/Sriram.JPG" alt="Sriram" />
+
+          <div class="experience-panel" data-panel="1">
+            <h3>AI Systems & Simulation</h3>
+            <p class="date">Core Focus</p>
+            <ul>
+              <li>
+                Built AI systems for enemy navigation, decision-making, and
+                combat behavior
+              </li>
+              <li>
+                Worked with pathfinding, state machines, and behavior-driven
+                logic
+              </li>
+              <li>
+                Developed simulations involving autonomous agents and
+                environment interaction
+              </li>
+              <li>
+                Integrated physics constraints into AI decision processes
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-panel" data-panel="2">
+            <h3>Infrastructure, Backend & Deployment</h3>
+            <p class="date">Supporting Systems</p>
+            <ul>
+              <li>
+                Configured Linux-based servers for multiplayer and simulation
+                workloads
+              </li>
+              <li>
+                Used Raspberry Pi as a dedicated game server and test
+                environment
+              </li>
+              <li>Worked with SSH, networking, and headless deployments</li>
+              <li>Built basic monitoring and control dashboards</li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-      <div class="container">
-        <div class="section-heading">
-          <span>02.</span>
-          <h2>Focus Areas</h2>
-        </div>
-        <div class="experience-container">
-          <div class="experience-tabs" id="experienceTabs">
-            <button class="tab-btn active" data-tab="0">
-              Multiplayer Systems
-            </button>
-            <button class="tab-btn" data-tab="1">AI & Simulation</button>
-            <button class="tab-btn" data-tab="2">
-              Infrastructure & Backend
-            </button>
-          </div>
-
-          <div class="experience-content" id="experienceContent">
-            <div class="experience-panel active" data-panel="0">
-              <h3>Multiplayer & Real-Time Systems</h3>
-              <p class="date">Core Focus</p>
-              <ul>
-                <li>
-                  Designed real-time multiplayer game architectures using
-                  authoritative servers
-                </li>
-                <li>
-                  Implemented client-server sync, prediction, and state
-                  reconciliation
-                </li>
-                <li>
-                  Worked with Mirror networking and KCP transport for
-                  low-latency communication
-                </li>
-                <li>
-                  Handled gameplay systems under unreliable network conditions
-                </li>
-              </ul>
-            </div>
-
-            <div class="experience-panel" data-panel="1">
-              <h3>AI Systems & Simulation</h3>
-              <p class="date">Core Focus</p>
-              <ul>
-                <li>
-                  Built AI systems for enemy navigation, decision-making, and
-                  combat behavior
-                </li>
-                <li>
-                  Worked with pathfinding, state machines, and behavior-driven
-                  logic
-                </li>
-                <li>
-                  Developed simulations involving autonomous agents and
-                  environment interaction
-                </li>
-                <li>
-                  Integrated physics constraints into AI decision processes
-                </li>
-              </ul>
-            </div>
-
-            <div class="experience-panel" data-panel="2">
-              <h3>Infrastructure, Backend & Deployment</h3>
-              <p class="date">Supporting Systems</p>
-              <ul>
-                <li>
-                  Configured Linux-based servers for multiplayer and simulation
-                  workloads
-                </li>
-                <li>
-                  Used Raspberry Pi as a dedicated game server and test
-                  environment
-                </li>
-                <li>Worked with SSH, networking, and headless deployments</li>
-                <li>Built basic monitoring and control dashboards</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-heading">
+        <span>03.</span>
+        <h2>Projects on Board</h2>
       </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-      <div class="container">
-        <div class="section-heading">
-          <span>03.</span>
-          <h2>Some Things I'm Building</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <span class="folder-icon">📁</span>
+            <div class="project-links">
+              <a href="https://github.com/Sriramjj-2007/Hallways-Unbound" title="GitHub">⧉</a>
+              <!-- <a href="#" title="Live Demo">↗</a> -->
+            </div>
+          </div>
+          <h3>Hallways Unbound</h3>
+          <p>
+            A real-time multiplayer FPS with procedurally changing hallways,
+            gravity shifts, and competitive survival mechanics.
+          </p>
+          <div class="project-tech">
+            <span>Unity</span>
+            <span>C#</span>
+            <span>Mirror</span>
+            <span>KCP</span>
+          </div>
         </div>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-header">
-              <span class="folder-icon">📁</span>
-              <div class="project-links">
-                <a
-                  href="https://github.com/Sriramjj-2007/Hallways-Unbound"
-                  title="GitHub"
-                  >⧉</a
-                >
-                <!-- <a href="#" title="Live Demo">↗</a> -->
-              </div>
-            </div>
-            <h3>Hallways Unbound</h3>
-            <p>
-              A real-time multiplayer FPS with procedurally changing hallways,
-              gravity shifts, and competitive survival mechanics.
-            </p>
-            <div class="project-tech">
-              <span>Unity</span>
-              <span>C#</span>
-              <span>Mirror</span>
-              <span>KCP</span>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-header">
-              <span class="folder-icon">📁</span>
-              <!-- <div class="project-links">
+        <div class="project-card">
+          <div class="project-header">
+            <span class="folder-icon">📁</span>
+            <!-- <div class="project-links">
                 <a href="#" title="GitHub">⧉</a>
                 <a href="#" title="Live Demo">↗</a>
               </div> -->
-            </div>
-            <h3>Autonomous Drone Delivery Simulation</h3>
-            <p>
-              A simulation system modeling autonomous drone navigation using
-              global and local coordinate frames.
-            </p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>Simulation</span>
-              <span>AI Logic</span>
-            </div>
           </div>
-          <div class="project-card">
-            <div class="project-header">
-              <span class="folder-icon">📁</span>
-              <!-- <div class="project-links">
+          <h3>Autonomous Drone Delivery Simulation</h3>
+          <p>
+            A simulation system modeling autonomous drone navigation using
+            global and local coordinate frames.
+          </p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Simulation</span>
+            <span>AI Logic</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-header">
+            <span class="folder-icon">📁</span>
+            <!-- <div class="project-links">
                 <a href="#" title="GitHub">⧉</a>
                 <a href="#" title="Live Demo">↗</a>
               </div> -->
-            </div>
-            <h3>WebGL Game Engine</h3>
-            <p>
-              A lightweight WebGL-based engine for browser games, focused on
-              performance and modular architecture.
-            </p>
-            <div class="project-tech">
-              <span>JavaScript</span>
-              <span>Three.js</span>
-              <span>WebGL</span>
-            </div>
           </div>
-          <div class="project-card">
-            <div class="project-header">
-              <span class="folder-icon">📁</span>
-              <!-- <div class="project-links">
+          <h3>WebGL Game Engine</h3>
+          <p>
+            A lightweight WebGL-based engine for browser games, focused on
+            performance and modular architecture.
+          </p>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>Three.js</span>
+            <span>WebGL</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-header">
+            <span class="folder-icon">📁</span>
+            <!-- <div class="project-links">
                 <a href="#" title="GitHub">⧉</a>
                 <a href="#" title="Live Demo">↗</a>
               </div> -->
-            </div>
-            <h3>AI Enemy Behavior System</h3>
-            <p>
-              An AI system handling enemy navigation, decision-making, and
-              combat behavior for games.
-            </p>
-            <div class="project-tech">
-              <span>AI</span>
-              <span>Pathfinding</span>
-              <span>State Machines</span>
-            </div>
           </div>
-          <!-- <div class="project-card">
+          <h3>AI Enemy Behavior System</h3>
+          <p>
+            An AI system handling enemy navigation, decision-making, and
+            combat behavior for games.
+          </p>
+          <div class="project-tech">
+            <span>AI</span>
+            <span>Pathfinding</span>
+            <span>State Machines</span>
+          </div>
+        </div>
+        <!-- <div class="project-card">
             <div class="project-header">
               <span class="folder-icon">📁</span>
               <div class="project-links">
@@ -309,147 +298,138 @@
               <span>WebRTC</span>
             </div>
           </div> -->
-        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <p class="contact-overline">04. What's Next?</p>
-      <h2>Get In Touch</h2>
-      <p>
-        I'm open to internships, collaborations, and serious projects. If what I
-        build aligns with what you need — let's talk.
-      </p>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <p class="contact-overline">04. What's Next?</p>
+    <h2>Get In Touch</h2>
+    <p>
+      I'm open to internships, collaborations, and serious projects. If what I
+      build aligns with what you need — let's talk.
+    </p>
 
-      <a href="mailto:jjsriram07@gmail.com" class="btn">Say Hello</a>
-    </section>
+    <a href="mailto:jjsriram07@gmail.com" class="btn">Say Hello</a>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-      <p>Designed & Built by Sriram</p>
-      <!-- Social Links -->
+  <!-- Footer -->
+  <footer>
+    <p>Designed & Built by Sriram</p>
+    <!-- Social Links -->
     <div class="social-links">
-      <a
-        href="https://github.com/Sriramjj-2007"
-        title="GitHub"
-        target="_blank"
-        aria-label="GitHub"
-      >
+      <a href="https://github.com/Sriramjj-2007" title="GitHub" target="_blank" aria-label="GitHub">
         <i class="fa-brands fa-github"></i>
       </a>
 
-      <a
-        href="https://www.linkedin.com/in/jjsriram/"
-        title="LinkedIn"
-        target="_blank"
-        aria-label="LinkedIn"
-      >
+      <a href="https://www.linkedin.com/in/jjsriram/" title="LinkedIn" target="_blank" aria-label="LinkedIn">
         <i class="fa-brands fa-linkedin"></i>
       </a>
     </div>
-    </footer>
+  </footer>
 
-    
 
-    <!-- Email Link -->
-    <div class="email-link">
-      <a href="mailto:jjsriram07@gmail.com">jjsriram07@gmail.com</a>
-    </div>
 
-    <script>
-      // Mobile Menu Toggle
-      const menuBtn = document.getElementById("menuBtn");
-      const mobileNav = document.getElementById("mobileNav");
+  <!-- Email Link -->
+  <div class="email-link">
+    <a href="mailto:jjsriram07@gmail.com">jjsriram07@gmail.com</a>
+  </div>
 
-      menuBtn.addEventListener("click", () => {
-        mobileNav.classList.toggle("active");
-        menuBtn.textContent = mobileNav.classList.contains("active")
-          ? "✕"
-          : "☰";
+  <script>
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileNav = document.getElementById("mobileNav");
+
+    menuBtn.addEventListener("click", () => {
+      mobileNav.classList.toggle("active");
+      menuBtn.textContent = mobileNav.classList.contains("active")
+        ? "✕"
+        : "☰";
+    });
+
+    // Close mobile menu when clicking a link
+    mobileNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileNav.classList.remove("active");
+        menuBtn.textContent = "☰";
       });
+    });
 
-      // Close mobile menu when clicking a link
-      mobileNav.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileNav.classList.remove("active");
-          menuBtn.textContent = "☰";
-        });
+    // Experience Tabs
+    const tabBtns = document.querySelectorAll(".tab-btn");
+    const panels = document.querySelectorAll(".experience-panel");
+
+    tabBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const tabIndex = btn.dataset.tab;
+
+        // Update active tab
+        tabBtns.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        // Update active panel
+        panels.forEach((p) => p.classList.remove("active"));
+        document
+          .querySelector(`.experience-panel[data-panel="${tabIndex}"]`)
+          .classList.add("active");
       });
+    });
 
-      // Experience Tabs
-      const tabBtns = document.querySelectorAll(".tab-btn");
-      const panels = document.querySelectorAll(".experience-panel");
-
-      tabBtns.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const tabIndex = btn.dataset.tab;
-
-          // Update active tab
-          tabBtns.forEach((b) => b.classList.remove("active"));
-          btn.classList.add("active");
-
-          // Update active panel
-          panels.forEach((p) => p.classList.remove("active"));
-          document
-            .querySelector(`.experience-panel[data-panel="${tabIndex}"]`)
-            .classList.add("active");
-        });
-      });
-
-      // Smooth scroll for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
-          }
-        });
-      });
-
-      // Header scroll effect
-      let lastScroll = 0;
-      const header = document.querySelector("header");
-
-      window.addEventListener("scroll", () => {
-        const currentScroll = window.pageYOffset;
-
-        if (currentScroll > lastScroll && currentScroll > 100) {
-          header.style.transform = "translateY(-100%)";
-        } else {
-          header.style.transform = "translateY(0)";
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
         }
-
-        lastScroll = currentScroll;
       });
-    </script>
+    });
 
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
+    // Header scroll effect
+    let lastScroll = 0;
+    const header = document.querySelector("header");
 
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyA2f5TfVc_rRNeX_MpqgXRBx9tUUNY1DdY",
-        authDomain: "sriram-50fbd.firebaseapp.com",
-        projectId: "sriram-50fbd",
-        storageBucket: "sriram-50fbd.firebasestorage.app",
-        messagingSenderId: "757413933977",
-        appId: "1:757413933977:web:9b8ed5b8e2cd51b4855908",
-        measurementId: "G-CPLGY9K7L7",
-      };
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
 
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script>
-  </body>
+      if (currentScroll > lastScroll && currentScroll > 100) {
+        header.style.transform = "translateY(-100%)";
+      } else {
+        header.style.transform = "translateY(0)";
+      }
+
+      lastScroll = currentScroll;
+    });
+  </script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyA2f5TfVc_rRNeX_MpqgXRBx9tUUNY1DdY",
+      authDomain: "sriram-50fbd.firebaseapp.com",
+      projectId: "sriram-50fbd",
+      storageBucket: "sriram-50fbd.firebasestorage.app",
+      messagingSenderId: "757413933977",
+      appId: "1:757413933977:web:9b8ed5b8e2cd51b4855908",
+      measurementId: "G-CPLGY9K7L7",
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+
 </html>
